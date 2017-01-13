@@ -1,0 +1,26 @@
+{
+    "name": "log-example",
+    "displayName": "log-example",
+    "description": "A simple extension for log syntax highlighting.",
+    "version": "0.0.1",
+    "publisher": "gcroteau",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "log",
+            "aliases": ["log", "log"],
+            "extensions": [".log"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "log",
+            "scopeName": "source.log",
+            "path": "./syntaxes/log.tmLanguage.json"
+        }]
+    }
+}
