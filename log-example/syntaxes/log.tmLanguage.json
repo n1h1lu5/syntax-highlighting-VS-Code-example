@@ -11,10 +11,20 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.log",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "constant.regexp.log",
+					"match": "(LOG)"
+				}, 
+				{
+					"name": "comment.log",
+					"match": "(--SUC--)"
+				},
+				{
+					"name": "invalid.log",
+					"match": "(--ERR--)"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.log",
