@@ -7,9 +7,6 @@
 		},
 		{
 			"include": "#date"
-		},
-		{
-			"include": "#strings"
 		}
 	],
 	"repository": {
@@ -40,17 +37,6 @@
 							"name": "markup.changed.log"
 						}
 					}
-				}
-			]
-		},
-		"strings": {
-			"name": "string.quoted.double.log",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.log",
-					"match": "\\\\."
 				}
 			]
 		}
